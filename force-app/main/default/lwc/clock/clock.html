@@ -1,0 +1,34 @@
+<template>
+    <div class="center-container">
+        <!-- Focusable clock container with aria label -->
+        <div class="digital-clock-container" role="region" aria-labelledby="clock-heading" tabindex="0" aria-label="This is a clock">
+            <h2 id="clock-heading" class="sr-only">Digital Clock</h2> <!-- Hidden heading for screen readers -->
+            
+            <div class="digital-clock">
+                <!-- Time section: Focusable, announces the current time -->
+                <div class="time" tabindex="0" aria-label={currentTimeLabel}>
+                    <b>Current Time:</b> 
+                    <time datetime={currentTime}>
+                        <br>{currentTime}
+                    </time>
+                </div>
+                
+                <!-- Seconds: No focus required, only visually shown -->
+                <div class="seconds">
+                    Seconds: {currentSeconds}
+                </div>
+                
+                <!-- Date section: Focusable, announces the current date -->
+                <div class="time2" tabindex="0" aria-label={currentDateLabel}>
+                    <b>Current Date:</b> 
+                    <time datetime={currentDate}>
+                        <br>{currentDate}
+                    </time>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+
+

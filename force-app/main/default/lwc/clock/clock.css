@@ -1,0 +1,53 @@
+.center-container {
+    display: flex;
+    justify-content: center;
+}
+
+.digital-clock-container {
+    border: 2px solid #140b47; /* Apply border to the border-container */
+    display: inline-block; /* To fit the content size */
+    padding: 10px;
+    width: 300px; /* Adjust the width as needed */
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.digital-clock {
+    font-size: 36px;
+    color: #140b47; /* Corrected the text-color property */
+    text-align: center;
+}
+
+.seconds {
+    font-size: 18px;
+    color: #140b47; /* Corrected the text-color property */
+    text-align: center;
+}
+
+.time2 {
+    font-size: 22px;
+    color: #140b47; /* Corrected the text-color property */
+    text-align: center;
+}
+
+/* Hide content visually but keep it accessible to screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.time2 {
+    font-size: 22px;
+    color: #140b47; /* Corrected the Text-color property */
+    text-align: center;
+
+}
